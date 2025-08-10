@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+.Name {
+    font-size: 64px;
+    padding-top: 2.5%;
+    animation: fadeIn 1.5s;
+}
+.Profession {
+    font-size: 40px;
+    padding-bottom: 30px;
+    animation: fadeIn 1.5s
+} @keyframes fadeIn {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+

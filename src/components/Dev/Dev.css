@@ -1,0 +1,13 @@
+.devBody {
+    font-size: 24px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.foodImg {
+    display: flex;
+    justify-content: center;
+}
+.food {
+    width: 10%;
+}

@@ -1,0 +1,81 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+import "./Home.css";
+import { ReactNode } from "react";
+
+function Home() {
+  return (
+    <>
+      <div className="row">
+        <FadeUp delay={0} duration={3.5}>
+          <div>
+            <img src="src\assets\Portrait C.jpg" className="img1" />
+          </div>
+        </FadeUp>
+        <FadeUp delay={0.25} duration={3.5}>
+          <div>
+            <img src="src\assets\Portrait B.jpg" className="img2" />
+          </div>
+        </FadeUp>
+        <FadeUp delay={0.5} duration={3.5}>
+          <div>
+            <img src="src\assets\Portrait A.jpg" className="img3" />
+          </div>
+        </FadeUp>
+      </div>
+      <div className="aboutMe">
+        <FadeUp delay={0} duration={1.5}>
+          <p className="text">
+            My name is Khondoker Tazwar Akber, but feel free to call me Tazz.
+            For the past few years, I've been a software engineer having worked
+            for various companies that showcases my expertise. I have a passion
+            for working with popular libraries and frameworks to produce
+            full-stack applications such as Java Spring Boot as well as
+            JavaScript Angular and React.<br></br>
+            <br></br>
+            Additionally, I spend my free time practicing photography and music
+            production. Whether it's programming, shooting a photo, or making a
+            new song nothing is more satisfying than completing the project.
+          </p>
+        </FadeUp>
+      </div>
+    </>
+  );
+}
+
+export function FadeUp({
+  children,
+  delay = 0,
+  duration = 0.5,
+}: {
+  children: ReactNode;
+  delay: number;
+  duration?: number;
+}) {
+  let ref = useRef(null);
+  let isInView = useInView(ref);
+
+  return (
+    <motion.div
+      ref={ref}
+      variants={{
+        hidden: {
+          opacity: 0,
+          y: 20,
+        },
+        visible: {
+          opacity: 1,
+          y: 0,
+        },
+      }}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      transition={{ delay, type: "spring", duration }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+export default Home;
