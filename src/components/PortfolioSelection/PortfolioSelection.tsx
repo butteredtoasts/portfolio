@@ -20,7 +20,10 @@ function PortfolioSelection() {
     <>
       <div className="buttons">
         <ThemeProvider theme={theme}>
-          <Stack spacing={6} direction="row">
+          <Stack
+            spacing={{ xs: 2, md: 6 }}
+            direction={{ xs: "column", md: "row" }}
+          >
             <Link to="/portfolio/dev">
               <Button
                 variant="contained"

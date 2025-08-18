@@ -1,3 +1,45 @@
+@media (max-width: 767px) {
+.contactMe {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.imageBox {
+    display: flex;
+}
+.imageText {
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.info {
+    margin-left: 10px;
+    font-size: 28px;
+    color: black;
+    line-height: 2.5;
+}
+.info img {
+    padding-top: 12px;
+    width: 50px;
+    height: 90%;
+}
+
+.resume a {
+    font-size: 24px;
+    text-decoration: none;
+}
+.resume a:hover {
+    text-decoration: underline;
+}
+.resume p {
+    text-align: center;
+    font-size: 24px;
+}
+}
+
+@media (min-width: 768px) {
 .contactMe {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -36,4 +78,5 @@
 .resume p {
     margin-left: 100px;
     font-size: 24px;
+}
 }

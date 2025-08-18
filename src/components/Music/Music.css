@@ -1,5 +1,29 @@
+@media (max-width: 767px) {
 .musicText {
     margin-top: 50px;
     text-align: center;
+    font-size: 28px;
+}
+.meow {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding-top: 20px;
+}
+}
+
+@media (min-width: 768px) {
+.musicText {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    text-align: center;
     font-size: 32px;
+}
+.meow {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding-top: 20px;
+}
 }

@@ -1,3 +1,27 @@
+@media (max-width: 767px) {
+.devHeader {
+    padding-bottom: 10px;
+}
+.devBody {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.foodImg {
+    display: flex;
+    justify-content: center;
+}
+.food {
+    width: 20%;
+}
+}
+
+@media (min-width: 768px) {
+.devHeader {
+    padding-bottom: 10px;
+}
 .devBody {
     font-size: 24px;
     margin-left: 200px;
@@ -11,4 +35,5 @@
 }
 .food {
     width: 10%;
+}
 }

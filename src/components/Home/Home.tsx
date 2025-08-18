@@ -36,6 +36,8 @@ function Home() {
             Additionally, I spend my free time practicing photography and music
             production. Whether it's programming, shooting a photo, or making a
             new song nothing is more satisfying than completing the project.
+            Take a look through my site to see what I've accomplished over the
+            past few years.
           </p>
         </FadeUp>
       </div>
