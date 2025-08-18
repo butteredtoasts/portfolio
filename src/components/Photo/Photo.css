@@ -1,0 +1,47 @@
+.babyShowerBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.babyShowerImg {
+    margin-left: 50px;
+    width: 50%;
+}
+.babyShowerText {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.girlBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.girlImg {
+    margin-right: 50px;
+    width: 45%;
+}
+.girlText {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.tacoBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.tacoImg {
+    margin-left: 50px;
+    width: 50%;
+}
+.tacoText {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}

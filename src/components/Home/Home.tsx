@@ -1,8 +1,7 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, ReactNode } from "react";
 
 import "./Home.css";
-import { ReactNode } from "react";
 
 function Home() {
   return (

@@ -1,5 +1,14 @@
+import "./Music.css";
+
 function Music() {
-  return <h1>Music testing!</h1>;
+  return (
+    <>
+      <p className="musicText">
+        Placeholder for now. Working on getting audio files hosted to play on
+        here.
+      </p>
+    </>
+  );
 }
 
 export default Music;

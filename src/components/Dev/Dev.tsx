@@ -15,12 +15,14 @@ function Dev() {
           various React tools such as Routing, Buttons, Links, and general
           Component structuring to get it all working. For example, the
           navigation bar and the portfolio buttons use Routing and Links to make
-          the proper Components visible with reloading the page. This is the
-          power of React and single-page applications (SPA).
+          the proper Components visible without reloading the page. This is the
+          power of React for single-page applications (SPA). <br></br>
+          <br></br>
+          My first goal is to make it simple and readable on desktops. However,
+          I'm fully aware that some people may need to view this website on
+          their phone. Once I consider this website to be feature-complete I can
+          then work on formatting for mobile devices too.
         </p>
-
-        <br></br>
-        <br></br>
 
         <h1>Mythical Foods: A Minecraft Mod</h1>
         <p className="devBody">
