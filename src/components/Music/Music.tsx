@@ -10,7 +10,7 @@ function Music() {
           tracks to play once I find out what's the best medium to host my music
           on.
         </p>
-        <img src="\src\assets\pusheen.gif" className="meow" />
+        <img src="/src/assets/pusheen.gif" className="meow" />
       </FadeUp>
     </>
   );

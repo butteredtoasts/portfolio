@@ -1,8 +1,6 @@
 import { FadeUp } from "../Home/Home";
 import "./Photo.css";
 
-import babyShower from "./BabyShower.jpg";
-
 function Photo() {
   var girlBoxFinal = girlBoxFormat();
 
@@ -12,7 +10,7 @@ function Photo() {
       <br></br>
       <FadeUp delay={0.25} duration={0.5}>
         <div className="babyShowerBox">
-          <img src="{babyShower}" className="babyShowerImg" />
+          <img src="/src/assets/BabyShower.jpg" className="babyShowerImg" />
           <p className="babyShowerText">
             I'm available for professional photoshoots at special events such as
             baby showers and weddings!
@@ -26,7 +24,7 @@ function Photo() {
 
       <FadeUp delay={0.1} duration={0.5}>
         <div className="tacoBox">
-          <img src="\src\assets\Taco.jpg" className="tacoImg" />
+          <img src="/src/assets/Taco.jpg" className="tacoImg" />
           <p className="tacoText">
             If you also need content of your product, location, or services,
             then I am STILL your guy!
@@ -44,7 +42,7 @@ export function girlBoxFormat() {
   if (width < 768) {
     return (girlBoxContent = (
       <div className="girlBox">
-        <img src="\src\assets\Girl.jpeg" className="girlImg" />
+        <img src="/src/assets/Girl.jpeg" className="girlImg" />
         <p className="girlText">
           My portraits go beyond just a photo of you smiling. The background,
           colours, and lighting all matter just as much as your face!
@@ -58,7 +56,7 @@ export function girlBoxFormat() {
           My portraits go beyond just a photo of you smiling. The background,
           colours, and lighting all matter just as much as your face!
         </p>
-        <img src="\src\assets\Girl.jpeg" className="girlImg" />
+        <img src="/src/assets/Girl.jpeg" className="girlImg" />
       </div>
     ));
   }

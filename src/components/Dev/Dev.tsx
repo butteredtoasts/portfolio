@@ -60,9 +60,9 @@ function Dev() {
           <br></br>
 
           <Stack spacing={6} direction="row" className="foodImg">
-            <img src="\src\assets\airfruit.png" className="food" />
-            <img src="\src\assets\vitafruit.png" className="food" />
-            <img src="\src\assets\brightberries.png" className="food" />
+            <img src="/src/assets/airfruit.png" className="food" />
+            <img src="/src/assets/vitafruit.png" className="food" />
+            <img src="/src/assets/brightberries.png" className="food" />
           </Stack>
         </FadeUp>
       </div>
