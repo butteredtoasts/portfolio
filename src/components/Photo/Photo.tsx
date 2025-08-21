@@ -1,6 +1,8 @@
 import { FadeUp } from "../Home/Home";
 import "./Photo.css";
 
+import baby from "/src/assets/BabyShower.jpg";
+
 function Photo() {
   var girlBoxFinal = girlBoxFormat();
 
@@ -10,7 +12,7 @@ function Photo() {
       <br></br>
       <FadeUp delay={0.25} duration={0.5}>
         <div className="babyShowerBox">
-          <img src="/src/assets/BabyShower.jpg" className="babyShowerImg" />
+          <img src={baby} className="babyShowerImg" />
           <p className="babyShowerText">
             I'm available for professional photoshoots at special events such as
             baby showers and weddings!
