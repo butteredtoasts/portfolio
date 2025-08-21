@@ -2,6 +2,10 @@ import { Stack } from "@mui/material";
 import { FadeUp } from "../Home/Home";
 import "./Dev.css";
 
+import airfruit from "/src/assets/airfruit.png";
+import vitafruit from "/src/assets/vitafruit.png";
+import brightberries from "/src/assets/brightberries.png";
+
 function Dev() {
   return (
     <>
@@ -60,9 +64,9 @@ function Dev() {
           <br></br>
 
           <Stack spacing={6} direction="row" className="foodImg">
-            <img src="/src/assets/airfruit.png" className="food" />
-            <img src="/src/assets/vitafruit.png" className="food" />
-            <img src="/src/assets/brightberries.png" className="food" />
+            <img src={airfruit} className="food" />
+            <img src={vitafruit} className="food" />
+            <img src={brightberries} className="food" />
           </Stack>
         </FadeUp>
       </div>

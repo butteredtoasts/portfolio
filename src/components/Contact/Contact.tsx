@@ -1,5 +1,11 @@
 import "./Contact.css";
 
+import email from "/src/assets/email.jpg";
+import phone from "/src/assets/phone.jpg";
+import linkedIn from "/src/assets/linkedIn.jpg";
+import instagram from "/src/assets/instagram.png";
+import git from "/src/assets/git.png";
+
 function Contact() {
   return (
     <>
@@ -7,23 +13,23 @@ function Contact() {
       <br></br>
       <div className="info">
         <div className="imageBox">
-          <img src="src/assets/email.jpg" />
+          <img src={email} />
           <p className="imageText">tazwarakber@gmail.com</p>
         </div>
         <div className="imageBox">
-          <img src="src/assets/phone.jpg" />
+          <img src={phone} />
           <p className="imageText">516-263-7510</p>
         </div>
         <div className="imageBox">
-          <img src="src/assets/linkedIn.jpg" />
+          <img src={linkedIn} />
           <a href="https://www.linkedin.com/in/tazwar-akber">LinkedIn</a>
         </div>
         <div className="imageBox">
-          <img src="src/assets/instagram.png" />
+          <img src={instagram} />
           <a href="https://www.instagram.com/tazzakber/?hl=en">@tazzakber</a>
         </div>
         <div className="imageBox">
-          <img src="src/assets/git.png" />
+          <img src={git} />
           <a href="https://github.com/butteredtoasts">GitHub</a>
         </div>
       </div>

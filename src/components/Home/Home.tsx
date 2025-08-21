@@ -3,23 +3,27 @@ import { useRef, ReactNode } from "react";
 
 import "./Home.css";
 
+import portraitA from "/src/assets/Portrait A.jpg";
+import portraitB from "/src/assets/Portrait B.jpg";
+import portraitC from "/src/assets/Portrait C.jpg";
+
 function Home() {
   return (
     <>
       <div className="row">
         <FadeUp delay={0} duration={3.5}>
           <div>
-            <img src="src/assets/Portrait C.jpg" className="img1" />
+            <img src={portraitC} className="img1" />
           </div>
         </FadeUp>
         <FadeUp delay={0.25} duration={3.5}>
           <div>
-            <img src="src/assets/Portrait B.jpg" className="img2" />
+            <img src={portraitB} className="img2" />
           </div>
         </FadeUp>
         <FadeUp delay={0.5} duration={3.5}>
           <div>
-            <img src="src/assets/Portrait A.jpg" className="img3" />
+            <img src={portraitA} className="img3" />
           </div>
         </FadeUp>
       </div>
