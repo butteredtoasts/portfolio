@@ -32,6 +32,7 @@
 .foodImg {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 .food {
     width: 10%;
