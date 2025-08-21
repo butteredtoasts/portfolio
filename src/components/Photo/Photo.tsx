@@ -10,7 +10,7 @@ function Photo() {
       <br></br>
       <FadeUp delay={0.25} duration={0.5}>
         <div className="babyShowerBox">
-          <img src="\src\assets\BabyShower.jpg" className="babyShowerImg" />
+          <img src="src/assets/BabyShower.jpg" className="babyShowerImg" />
           <p className="babyShowerText">
             I'm available for professional photoshoots at special events such as
             baby showers and weddings!
