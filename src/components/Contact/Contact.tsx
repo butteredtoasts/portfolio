@@ -5,6 +5,7 @@ import phone from "/src/assets/phone.jpg";
 import linkedIn from "/src/assets/linkedIn.jpg";
 import instagram from "/src/assets/instagram.png";
 import git from "/src/assets/git.png";
+import resume from "/src/assets/KhondokerTazwarAkberResume.pdf";
 
 function Contact() {
   return (
@@ -39,10 +40,7 @@ function Contact() {
       <div className="resume">
         <p>
           If you would like to download my resume,{" "}
-          <a
-            href="src/assets/Khondoker Tazwar Akber Resume SE.pdf"
-            download="Khondoker Tazwar Akber Resume"
-          >
+          <a href={resume} download="Khondoker Tazwar Akber Resume">
             click here.
           </a>
         </p>

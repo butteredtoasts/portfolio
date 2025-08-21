@@ -1,6 +1,8 @@
 import { FadeUp } from "../Home/Home";
 import "./Music.css";
 
+import pusheen from "/src/assets/pusheen.gif";
+
 function Music() {
   return (
     <>
@@ -10,7 +12,7 @@ function Music() {
           tracks to play once I find out what's the best medium to host my music
           on.
         </p>
-        <img src="\src\assets\pusheen.gif" className="meow" />
+        <img src={pusheen} className="meow" />
       </FadeUp>
     </>
   );
