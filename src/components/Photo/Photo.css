@@ -46,6 +46,14 @@
 }
 
 @media (min-width: 768px) {
+.photoTitles {
+    text-align: center;
+}
+.photoTitles h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
 .babyShowerBox {
     display: flex;
     align-items: center;

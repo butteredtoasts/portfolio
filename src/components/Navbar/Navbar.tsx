@@ -14,7 +14,7 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
         </nav>
 
-        <p>Thank you!</p>
+        <p className="tazzworks">Tazzworks</p>
       </header>
     </>
   );
