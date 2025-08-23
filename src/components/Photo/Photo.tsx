@@ -89,9 +89,9 @@ export function portraitBoxFormat(imagesValue: string) {
         <div className="tacoBox">
           <div
             style={{
-              maxWidth: "800px",
+              maxWidth: "1200px",
               width: "100%",
-              aspectRatio: "16 / 10",
+              aspectRatio: "18 / 12",
               margin: "0 auto",
               marginBottom: "10px",
             }}
