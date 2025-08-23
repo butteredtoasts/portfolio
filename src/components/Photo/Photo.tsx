@@ -1,12 +1,16 @@
 import { FadeUp } from "../Home/Home";
+import { PortraitImageSlider } from "../PotraitImgSlides/PortraitImageSlider";
+
 import "./Photo.css";
 
 import babyShower from "/src/assets/BabyShower.jpg";
 import girl from "/src/assets/Girl.jpeg";
 import taco from "/src/assets/Taco.jpg";
+import mountainBoy from "/src/assets/MountainBoy.jpg";
+import coupleDance from "/src/assets/CoupleDance.jpg";
 
 function Photo() {
-  var girlBoxFinal = girlBoxFormat();
+  var portraitBoxFinal = portraitBoxFormat();
 
   return (
     <>
@@ -26,7 +30,7 @@ function Photo() {
       </FadeUp>
 
       <FadeUp delay={0.25} duration={0.5}>
-        {girlBoxFinal}
+        {portraitBoxFinal}
       </FadeUp>
 
       <FadeUp delay={0.25} duration={0.5}>
@@ -45,17 +49,29 @@ function Photo() {
   );
 }
 
-export function girlBoxFormat() {
+export function portraitBoxFormat() {
   let width = window.innerWidth;
-  var girlBoxContent;
+  var portraitBoxContent;
+
+  const eventImages = [girl, mountainBoy, coupleDance];
 
   if (width < 768) {
-    return (girlBoxContent = (
-      <div className="girlBox">
-        <img src={girl} className="girlImg" />
+    return (portraitBoxContent = (
+      <div className="portraitBox">
+        <div
+          style={{
+            maxWidth: "800px",
+            width: "100%",
+            aspectRatio: "16 / 10",
+            margin: "0 auto",
+            marginBottom: "10px",
+          }}
+        >
+          <PortraitImageSlider imageUrls={eventImages} />
+        </div>
         <div className="photoTitles">
           <h2>Portraits</h2>
-          <p className="girlText">
+          <p className="portraitText">
             My portraits go beyond just a photo of you smiling. The background,
             colours, and lighting all matter just as much as your face!
           </p>
@@ -63,16 +79,25 @@ export function girlBoxFormat() {
       </div>
     ));
   } else {
-    return (girlBoxContent = (
-      <div className="girlBox">
+    return (portraitBoxContent = (
+      <div className="portraitBox">
         <div className="photoTitles">
           <h2>Portraits</h2>
-          <p className="girlText">
+          <p className="portraitText">
             My portraits go beyond just a photo of you smiling. The background,
             colours, and lighting all matter just as much as your face!
           </p>
         </div>
-        <img src={girl} className="girlImg" />
+        <div
+          style={{
+            maxWidth: "1200px",
+            width: "100%",
+            aspectRatio: "16 / 14",
+            margin: "0 auto",
+          }}
+        >
+          <PortraitImageSlider imageUrls={eventImages} />
+        </div>
       </div>
     ));
   }
