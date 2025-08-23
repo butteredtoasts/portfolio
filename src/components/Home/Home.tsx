@@ -13,17 +13,17 @@ function Home() {
       <div className="row">
         <FadeUp delay={0} duration={3.5}>
           <div>
-            <img src={portraitC} className="img1" />
+            <img src={portraitC} className="img1" alt="Photo #1 of me" />
           </div>
         </FadeUp>
         <FadeUp delay={0.25} duration={3.5}>
           <div>
-            <img src={portraitB} className="img2" />
+            <img src={portraitB} className="img2" alt="Photo #2 of me" />
           </div>
         </FadeUp>
         <FadeUp delay={0.5} duration={3.5}>
           <div>
-            <img src={portraitA} className="img3" />
+            <img src={portraitA} className="img3" alt="Photo #3 of me" />
           </div>
         </FadeUp>
       </div>
