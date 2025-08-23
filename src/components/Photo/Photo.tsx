@@ -4,13 +4,19 @@ import { PortraitImageSlider } from "../PotraitImgSlides/PortraitImageSlider";
 import "./Photo.css";
 
 import babyShower from "/src/assets/BabyShower.jpg";
+
 import girl from "/src/assets/Girl.jpeg";
-import taco from "/src/assets/Taco.jpg";
 import mountainBoy from "/src/assets/MountainBoy.jpg";
 import coupleDance from "/src/assets/CoupleDance.jpg";
 
+import taco from "/src/assets/Taco.jpg";
+import tacoWork1 from "/src/assets/TacoWork1.jpg";
+import tacoWork2 from "/src/assets/TacoWork2.jpg";
+
 function Photo() {
-  var portraitBoxFinal = portraitBoxFormat();
+  var eventBoxFinal = portraitBoxFormat("event");
+  var portraitBoxFinal = portraitBoxFormat("portrait");
+  var productBoxFinal = portraitBoxFormat("product");
 
   return (
     <>
@@ -34,29 +40,28 @@ function Photo() {
       </FadeUp>
 
       <FadeUp delay={0.25} duration={0.5}>
-        <div className="tacoBox">
-          <img src={taco} className="tacoImg" />
-          <div className="photoTitles">
-            <h2>Products</h2>
-            <p className="tacoText">
-              If you also need content of your product, location, or services,
-              then I am STILL your guy!
-            </p>
-          </div>
-        </div>
+        {productBoxFinal}
       </FadeUp>
     </>
   );
 }
 
-export function portraitBoxFormat() {
+export function portraitBoxFormat(imagesValue: string) {
   let width = window.innerWidth;
-  var portraitBoxContent;
+  var boxContent;
 
   const eventImages = [girl, mountainBoy, coupleDance];
+  const productImages = [taco, tacoWork1, tacoWork2];
+
+  var imagesToUse = new Array(3);
+  if (imagesValue === "portrait") {
+    imagesToUse = eventImages;
+  } else if (imagesValue === "product") {
+    imagesToUse = productImages;
+  }
 
   if (width < 768) {
-    return (portraitBoxContent = (
+    return (boxContent = (
       <div className="portraitBox">
         <div
           style={{
@@ -67,7 +72,7 @@ export function portraitBoxFormat() {
             marginBottom: "10px",
           }}
         >
-          <PortraitImageSlider imageUrls={eventImages} />
+          <PortraitImageSlider imageUrls={imagesToUse} />
         </div>
         <div className="photoTitles">
           <h2>Portraits</h2>
@@ -78,8 +83,33 @@ export function portraitBoxFormat() {
         </div>
       </div>
     ));
+  } else if (imagesValue === "product") {
+    {
+      return (boxContent = (
+        <div className="tacoBox">
+          <div
+            style={{
+              maxWidth: "800px",
+              width: "100%",
+              aspectRatio: "16 / 10",
+              margin: "0 auto",
+              marginBottom: "10px",
+            }}
+          >
+            <PortraitImageSlider imageUrls={imagesToUse} />
+          </div>
+          <div className="photoTitles">
+            <h2>Products</h2>
+            <p className="tacoText">
+              If you also need content of your product, location, or services,
+              then I am STILL your guy!
+            </p>
+          </div>
+        </div>
+      ));
+    }
   } else {
-    return (portraitBoxContent = (
+    return (boxContent = (
       <div className="portraitBox">
         <div className="photoTitles">
           <h2>Portraits</h2>
@@ -96,7 +126,7 @@ export function portraitBoxFormat() {
             margin: "0 auto",
           }}
         >
-          <PortraitImageSlider imageUrls={eventImages} />
+          <PortraitImageSlider imageUrls={imagesToUse} />
         </div>
       </div>
     ));

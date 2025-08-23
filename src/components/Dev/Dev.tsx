@@ -2,15 +2,93 @@ import { Stack } from "@mui/material";
 import { FadeUp } from "../Home/Home";
 import "./Dev.css";
 
+import award from "/src/assets/RegeneronAward.jpg";
+import tides from "/src/assets/TIDES.jpg";
+import regeneronExtra from "/src/assets/regeneronExtra.jpg";
+import labvoice from "/src/assets/LabVoice.png";
+
 import airfruit from "/src/assets/airfruit.png";
 import vitafruit from "/src/assets/vitafruit.png";
 import brightberries from "/src/assets/brightberries.png";
 
 function Dev() {
+  var regeneronLink =
+    "https://www.bio-itworld.com/news/2024/03/19/2024-innovative-practices-winners-in-informatics-collaboration-clinical-it-genomics";
+  var labVoiceLink = "https://www.labvoice.ai";
+
   return (
     <>
       <div className="devBox">
         <FadeUp delay={0} duration-={0.5}>
+          <br></br>
+          <br></br>
+          <h1 className="devHeader">
+            Regeneron Pharmaceuticals: Research IT Software Engineer
+          </h1>
+          <img
+            src={tides}
+            className="regeneronPhoto"
+            alt="Me with the TIDES team in Boston"
+          ></img>
+          <p className="devBody">
+            I worked at Regeneron for roughly a year and a half. I worked within
+            the Research IT department primarily with a team known as{" "}
+            <b>TIDES: </b>
+            Transforming Information with Digital Experimental Solutions. I used
+            a wide variety of tools and languages at this position that truly
+            diversified what I'm capable of. I started with the notion that I'll
+            be working on backend development, but I ended up on the team that
+            was focused on improving the efficiency of the scientists. My work
+            directly contributed to Regeneron receiving the{" "}
+            <a href={regeneronLink}>
+              Innovative Practices Award at Bio-IT World 2024
+            </a>
+            !<br></br> <br></br>
+            <img
+              src={award}
+              className="regeneronPhoto"
+              alt="Award from Bio-It World 2024"
+            />
+            So what did I improve? I revolutionized the data capture and
+            accuracy of experiments and routine tasks across the company.
+            Scientists across various departments i.e. Opthalmology, Cardio, Vet
+            Services, etc. had difficulty accurately translating data from the
+            experiment to their devices. Some scientists were recording hour
+            long voice memos during testing and then mindlessly punching numbers
+            into Excel at their desk listening to it. Others would use the
+            "human robot" where there was a second scientist whose sole purpose
+            was to sit there and record the data from the first scientist.
+            Neither of these approaches were optimal.
+            <br></br> <br></br>
+            What did I use? Using <a href="https://www.labvoice.ai">LabVoice</a>
+            , a JavaScript-based NLP tool built specifically for scientists, I
+            designed several workflows that allowed the scientists to simply
+            speak to the software and immediately upload their data into
+            formatted and organized Excel sheets. Every workflow was built with
+            the user in mind using detailed constraints ensuring that I followed
+            their naming conventions and formatting. This way it was not an
+            intrusive addition to their process and only an improvement.
+            <br></br> <br></br>
+            <img
+              src={labvoice}
+              className="regeneronPhoto"
+              alt="LabVoice logo"
+            />
+            <br></br>
+            Additionally, I used Power Platform to modernize the animal census
+            process. What was originally done on paper is now done digitally
+            using Power Apps and Power BI. The original process required several
+            layers of transcription which was error-prone and time-consuming
+            between each hand off. Now the data, discrepancies, and accurate
+            timestamps are automatically handled with less steps in between.
+            <br></br> <br></br>
+            It has become much easier to track KPIs through my work. Every
+            record of data that gets passed from both my LabVoice workflows and
+            Power Platform applications comes with unique IDs, the user,
+            timestamps, processes done, and much more making it very easy to
+            monitor efficiency.
+          </p>
+
           <br></br>
           <br></br>
 
@@ -39,7 +117,7 @@ function Dev() {
             am.
           </p>
 
-          <h1 className="devHeader">Mythical Foods: A Minecraft Mod</h1>
+          <h1 className="devHeader">Mythical Food: A Minecraft Mod</h1>
           <p className="devBody">
             Minecraft is an open-source video game that allows third-party
             developers to alter or add additional code for endless gameplay
@@ -64,9 +142,9 @@ function Dev() {
           <br></br>
 
           <Stack spacing={6} direction="row" className="foodImg">
-            <img src={airfruit} className="food" />
-            <img src={vitafruit} className="food" />
-            <img src={brightberries} className="food" />
+            <img src={airfruit} className="food" alt="Airfruit" />
+            <img src={vitafruit} className="food" alt="Vitafruit" />
+            <img src={brightberries} className="food" alt="Brightberries" />
           </Stack>
         </FadeUp>
       </div>

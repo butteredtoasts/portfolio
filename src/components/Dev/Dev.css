@@ -9,6 +9,13 @@
     margin-bottom: 30px;
 }
 
+.regeneronPhoto {
+    display: block;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
 .foodImg {
     display: flex;
     justify-content: center;
@@ -27,6 +34,13 @@
     margin-left: 200px;
     margin-right: 200px;
     margin-bottom: 30px;
+}
+
+.regeneronPhoto {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .foodImg {
