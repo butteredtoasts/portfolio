@@ -1,0 +1,85 @@
+@media (max-width: 767px) {
+.mountainTextBox {
+    padding: 10px;
+}
+.mountainTextHeader {
+    text-align: left;
+}
+.mountainText {
+    font-size: 20px;
+}
+.moutainBoyHorizontalFlexBox {
+    padding-bottom: 50px;
+}
+.mountainBoyLandscape {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.girlTextBox {
+    padding: 10px;
+}
+.girlTextHeader {
+    text-align: left;
+}
+.girlText {
+    font-size: 20px;
+}
+}
+
+@media (min-width: 768px) {
+.mountainFlexBox {
+    margin-left: 5%;
+    display: inline-flex;
+    padding-bottom: 20px;
+}
+.mountainImageSliderBox {
+    max-width: 600px;
+    height: 100%;
+    border: 1px solid black;
+}
+.mountainTextBox {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 25%;
+}
+.mountainTextHeader {
+    text-align: left;
+}
+.mountainText {
+    font-size: 24px;
+}
+.moutainBoyHorizontalFlexBox {
+    display: flex;
+    margin-left: 5%;
+    padding-bottom: 50px;
+}
+.mountainBoyLandscape {
+    margin-right: 5%;
+    max-width: 1000px;
+    border: 1px solid black;
+}
+
+.girlFlexBox {
+    margin-left: 5%;
+    display: inline-flex;
+}
+.girlImageSliderBox {
+    max-width: 600px;
+    height: 100%;
+    border: 1px solid black;
+}
+.girlTextBox {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 25%;
+}
+.girlTextHeader {
+    text-align: left;
+}
+.girlText {
+    font-size: 24px;
+}
+}

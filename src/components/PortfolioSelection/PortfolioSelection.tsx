@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import "./PortfolioSelection.css";
 import Dev from "../Dev/Dev";
-import Photo from "../Photo/Photo";
 import Music from "../Music/Music";
+import Photo from "../Photo/Photo";
 
 const theme = createTheme({
   palette: {
