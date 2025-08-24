@@ -41,7 +41,10 @@ function Home() {
             production. Whether it's programming, shooting a photo, or making a
             new song nothing is more satisfying than completing the project.
             Take a look through my site to see what I've accomplished over the
-            past few years.
+            past few years. Keep in mind that my website is still under
+            construction and will take time to be properly formatted for both
+            mobile and desktop views. I'm still experimenting with layouts that
+            I want to try.
           </p>
         </FadeUp>
       </div>

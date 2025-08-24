@@ -1,0 +1,98 @@
+@media (max-width: 767px) {
+.babyShowerBox {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.babyShowerImg {
+    width: 90%;
+    padding-bottom: 20px;
+}
+.babyShowerText {
+    font-size: 28px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.portraitBox {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.portraitText {
+    font-size: 28px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.tacoBox {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tacoImg {
+    width: 90%;
+    padding-bottom: 20px;
+}
+.tacoText {
+    font-size: 28px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+}
+
+@media (min-width: 768px) {
+.photoTitles {
+    text-align: center;
+}
+.photoTitles h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.babyShowerBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.babyShowerImg {
+    margin-left: 50px;
+    width: 50%;
+}
+.babyShowerText {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.portraitBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+.portraitText {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.tacoBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.tacoImg {
+    margin-left: 50px;
+    width: 50%;
+}
+.tacoText {
+    font-size: 32px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+}

@@ -1,98 +1,128 @@
 @media (max-width: 767px) {
-.babyShowerBox {
-    display: block;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.babyShowerImg {
-    width: 90%;
-    padding-bottom: 20px;
-}
-.babyShowerText {
-    font-size: 28px;
-    margin-left: 50px;
-    margin-right: 50px;
+.photoLinkBox {
+    margin-bottom: 25px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
 }
 
-.portraitBox {
-    display: block;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.portraitText {
-    font-size: 28px;
-    margin-left: 50px;
-    margin-right: 50px;
+.photoLinksStack {
+    justify-content: center;
 }
 
-.tacoBox {
+.photoLinksContainer {
+    position: relative;
+}
+
+.photoLinks {
+    border: 1px solid black;
+    object-fit: fill;
+    opacity: 1;
+    border-width: 1px;
     display: block;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.tacoImg {
-    width: 90%;
-    padding-bottom: 20px;
-}
-.tacoText {
+    margin: auto;
+    width: 75%;
+} .photoLinksText {
+    background-color: cadetblue;
+    border-left: 3px solid cadetblue;
+    border-right: 4px solid cadetblue;
+    border-radius: 5px;
     font-size: 28px;
-    margin-left: 50px;
-    margin-right: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 325%);
+}
+
+.photoAboutFlexBox {
+    display: block;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+.photographyAboutBox {
+    padding-right: 50px;
+}
+.photoAboutHeader {
+    margin-top: 1rem;
+    padding-left: 10%;
+    padding-bottom: 15px;
+    font-size: 36px;
+}
+.photoAboutText {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.cameraPhotos img {
+    width: 100%;
 }
 }
 
 @media (min-width: 768px) {
-.photoTitles {
-    text-align: center;
-}
-.photoTitles h2 {
-    font-size: 30px;
-    padding-bottom: 10px;
+.photoLinkBox {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
 }
 
-.babyShowerBox {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.babyShowerImg {
-    margin-left: 50px;
-    width: 50%;
-}
-.babyShowerText {
-    font-size: 32px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
+.photoLinksStack {
+    justify-content: center;
 }
 
-.portraitBox {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-right: 50px;
-}
-.portraitText {
-    font-size: 32px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
+.photoLinksContainer {
+    width: 700px;
+    position: relative;
+    transition: opacity 200ms ease-in;
+} .photoLinksContainer:hover {
+    opacity: 0.7;
 }
 
-.tacoBox {
+.photoLinks {
+    object-fit: fill;
+    opacity: 1;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+} .photoLinksText {
+    background-color: cadetblue;
+    border-left: 3px solid cadetblue;
+    border-right: 4px solid cadetblue;
+    border-radius: 5px;
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    bottom: 14px;
+    left: 10px;
+}
+
+.photoAboutFlexBox {
     display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-left: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
 }
-.tacoImg {
-    margin-left: 50px;
-    width: 50%;
+.photographyAboutBox {
+    padding-right: 50px;
 }
-.tacoText {
-    font-size: 32px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
+.photoAboutHeader {
+    margin-top: 1rem;
+    padding-left: 10%;
+    padding-bottom: 15px;
+    font-size: 36px;
+}
+.photoAboutText {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.cameraPhotos {
+    margin-left: 20%;
+    margin-right: 10%;
+} .cameraPhotos img {
+    width: 400px;
 }
 }
