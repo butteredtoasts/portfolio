@@ -1,6 +1,6 @@
 import { PortraitImageSlider } from "../PotraitImgSlides/PortraitImageSlider";
 
-import mountainBoy from "/src/assets/Portraits/mountainBoy.jpg";
+import mountainBoy from "/src/assets/Portraits/MountainBoy.jpg";
 import mountainBoy1 from "/src/assets/Portraits/mountainBoy1.jpg";
 import mountainBoy2 from "/src/assets/Portraits/mountainBoy2.jpg";
 import mountainBoy3 from "/src/assets/Portraits/mountainBoy3.jpg";
